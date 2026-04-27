@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brewed — Specialty Coffee</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── NAV (с переключателем языка внутри) ─── -->
+  <header class="nav">
+    <a href="#hero" class="nav-logo">Brewed</a>
+    <nav class="nav-links">
+      <a href="#about"   data-en="About"   data-ua="Про нас">About</a>
+      <a href="#menu"    data-en="Menu"     data-ua="Меню">Menu</a>
+      <a href="#gallery" data-en="Vibe"     data-ua="Атмосфера">Vibe</a>
+      <a href="#visit"   data-en="Visit"    data-ua="Як нас знайти">Visit</a>
+    </nav>
+    <!-- Переключатель прямо в шапке, не перекрывает ссылки -->
+    <div class="lang-switcher">
+      <button class="lang-btn active" onclick="setLang('en', this)">EN</button>
+      <span class="lang-div">/</span>
+      <button class="lang-btn" onclick="setLang('ua', this)">UA</button>
+    </div>
+  </header>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow" data-en="Specialty coffee · Est. 2019" data-ua="Спешелті кава · З 2019">Specialty coffee · Est. 2019</p>
+      <h1 class="hero-title">
+        <span data-en="Every cup" data-ua="Кожна чашка">Every cup</span><br>
+        <em data-en="tells a story" data-ua="розповідає історію">tells a story</em>
+      </h1>
+      <p class="hero-sub" data-en="Single-origin beans, sourced with care, brewed with intention." data-ua="Зерна з одного походження, дібрані з любов'ю, заварені з наміром.">Single-origin beans, sourced with care, brewed with intention.</p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn-primary" data-en="Explore the menu" data-ua="Переглянути меню">Explore the menu</a>
+        <a href="#visit" class="btn-ghost" data-en="Find us" data-ua="Знайти нас">Find us</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span class="scroll-line"></span>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="about" id="about">
+    <div class="about-text">
+      <p class="section-label" data-en="Our story" data-ua="Наша історія">Our story</p>
+      <h2 data-en="Coffee as a craft,<br>not a commodity." data-ua="Кава як ремесло,<br>а не товар.">Coffee as a craft,<br>not a commodity.</h2>
+      <p data-en="We started Brewed because we believed coffee deserved more attention — more care from farm to cup. Every bean we use is traceable, every roast intentional. Come as you are." data-ua="Ми заснували Brewed, бо вірили — кава заслуговує на більше уваги, від ферми до чашки. Кожне зерно відстежуване, кожне обсмажування — навмисне. Приходьте такими, які є.">We started Brewed because we believed coffee deserved more attention — more care from farm to cup. Every bean we use is traceable, every roast intentional. Come as you are.</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat">
+        <span class="stat-num">12</span>
+        <span class="stat-label" data-en="Origins" data-ua="Походжень">Origins</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">6</span>
+        <span class="stat-label" data-en="Years brewing" data-ua="Років роботи">Years brewing</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">∞</span>
+        <span class="stat-label" data-en="Good mornings" data-ua="Добрих ранків">Good mornings</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── MENU ─── -->
+  <section class="menu" id="menu">
+    <div class="menu-header">
+      <p class="section-label" data-en="What we brew" data-ua="Що ми варимо">What we brew</p>
+      <h2 data-en="The menu" data-ua="Меню">The menu</h2>
+    </div>
+    <div class="menu-grid">
+
+      <div class="menu-card">
+        <div class="menu-card-top">
+          <span class="menu-icon">☕</span>
+          <span class="menu-price">89 ₴</span>
+        </div>
+        <p class="menu-name" data-en="Espresso" data-ua="Еспресо">Espresso</p>
+        <p class="menu-desc" data-en="Pure, intense, unapologetic." data-ua="Чистий, інтенсивний, без вибачень.">Pure, intense, unapologetic.</p>
+      </div>
+
+      <div class="menu-card featured">
+        <div class="menu-card-top">
+          <span class="menu-icon">🥛</span>
+          <span class="menu-price">129 ₴</span>
+        </div>
+        <p class="menu-name" data-en="Flat White" data-ua="Флет Вайт">Flat White</p>
+        <p class="menu-desc" data-en="Double ristretto, velvety microfoam. Our bestseller." data-ua="Подвійне рістрето, оксамитова мікропіна. Наш бестселер.">Double ristretto, velvety microfoam. Our bestseller.</p>
+        <span class="menu-badge" data-en="Fan favourite" data-ua="Улюбленець">Fan favourite</span>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-card-top">
+          <span class="menu-icon">🧊</span>
+          <span class="menu-price">149 ₴</span>
+        </div>
+        <p class="menu-name" data-en="Cold Brew" data-ua="Холодна заварка">Cold Brew</p>
+        <p class="menu-desc" data-en="Steeped 18 hours. Smooth, low-acid, naturally sweet." data-ua="Настоюється 18 годин. М'який, з низькою кислотністю, природно солодкий.">Steeped 18 hours. Smooth, low-acid, naturally sweet.</p>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-card-top">
+          <span class="menu-icon">🌿</span>
+          <span class="menu-price">119 ₴</span>
+        </div>
+        <p class="menu-name" data-en="Matcha Latte" data-ua="Матча Лате">Matcha Latte</p>
+        <p class="menu-desc" data-en="Ceremonial grade matcha, oat milk, a pinch of care." data-ua="Матча церемоніального ґатунку, вівсяне молоко, щіпка турботи.">Ceremonial grade matcha, oat milk, a pinch of care.</p>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-card-top">
+          <span class="menu-icon">🍯</span>
+          <span class="menu-price">139 ₴</span>
+        </div>
+        <p class="menu-name" data-en="Honey Cappuccino" data-ua="Капучіно з медом">Honey Cappuccino</p>
+        <p class="menu-desc" data-en="Wild flower honey, Ethiopian beans, thick foam." data-ua="Мед польових квітів, ефіопські зерна, густа піна.">Wild flower honey, Ethiopian beans, thick foam.</p>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-card-top">
+          <span class="menu-icon">🫖</span>
+          <span class="menu-price">99 ₴</span>
+        </div>
+        <p class="menu-name" data-en="Pour Over" data-ua="Пуровер">Pour Over</p>
+        <p class="menu-desc" data-en="Hand-brewed to order. Patient coffee for patient people." data-ua="Заварюється вручну на замовлення. Терпляча кава для терплячих людей.">Hand-brewed to order. Patient coffee for patient people.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── GALLERY / VIBE ─── -->
+  <section class="gallery" id="gallery">
+    <div class="gallery-header">
+      <p class="section-label" data-en="The atmosphere" data-ua="Атмосфера">The atmosphere</p>
+      <h2 data-en="Come for the coffee,<br>stay for the vibe." data-ua="Приходьте за кавою,<br>залишайтеся заради атмосфери.">Come for the coffee,<br>stay for the vibe.</h2>
+    </div>
+
+    <!-- Сетка с реальными фото с Unsplash (бесплатные, без атрибуции) -->
+    <div class="gallery-grid">
+
+      <!-- Большое фото — интерьер кофейни -->
+      <div class="gallery-cell c1">
+        <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=800&q=80" alt="Coffee shop interior" />
+        <span class="gallery-tag" data-en="Morning light" data-ua="Ранкове світло">Morning light</span>
+      </div>
+
+      <!-- Чашка кофе крупно -->
+      <div class="gallery-cell c2">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80" alt="Cup of coffee" />
+        <span class="gallery-tag" data-en="Slow Saturdays" data-ua="Повільні суботи">Slow Saturdays</span>
+      </div>
+
+      <!-- Бариста за работой -->
+      <div class="gallery-cell c3">
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=600&q=80" alt="Barista at work" />
+        <span class="gallery-tag" data-en="Work-friendly" data-ua="Для роботи">Work-friendly</span>
+      </div>
+
+      <!-- Большое фото — лате арт -->
+      <div class="gallery-cell c4">
+        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&q=80" alt="Latte art" />
+        <span class="gallery-tag" data-en="Good music" data-ua="Хороша музика">Good music</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── VISIT ─── -->
+  <section class="visit" id="visit">
+    <div class="visit-inner">
+      <div class="visit-info">
+        <p class="section-label" data-en="Find us" data-ua="Як нас знайти">Find us</p>
+        <h2 data-en="We're here,<br>waiting for you." data-ua="Ми тут,<br>чекаємо на вас.">We're here,<br>waiting for you.</h2>
+
+        <div class="visit-details">
+          <div class="visit-row">
+            <span class="visit-icon">📍</span>
+            <div>
+              <p class="visit-label" data-en="Address" data-ua="Адреса">Address</p>
+              <p class="visit-value">14 Koffein Street, Kyiv</p>
+            </div>
+          </div>
+          <div class="visit-row">
+            <span class="visit-icon">🕐</span>
+            <div>
+              <p class="visit-label" data-en="Hours" data-ua="Години роботи">Hours</p>
+              <p class="visit-value" data-en="Mon–Fri 7:30–21:00" data-ua="Пн–Пт 7:30–21:00">Mon–Fri 7:30–21:00</p>
+              <p class="visit-value" data-en="Sat–Sun 8:00–22:00" data-ua="Сб–Нд 8:00–22:00">Sat–Sun 8:00–22:00</p>
+            </div>
+          </div>
+          <div class="visit-row">
+            <span class="visit-icon">📞</span>
+            <div>
+              <p class="visit-label" data-en="Phone" data-ua="Телефон">Phone</p>
+              <p class="visit-value">+380 00 000 0000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="visit-map">
+        <div class="map-placeholder">
+          <span class="map-dot"></span>
+          <p data-en="Koffein Street, 14" data-ua="вул. Кофеїнна, 14">Koffein Street, 14</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo">Brewed</p>
+        <p class="footer-tagline" data-en="Specialty coffee, made with love." data-ua="Спешелті кава, зроблена з любов'ю.">Specialty coffee, made with love.</p>
+      </div>
+      <div class="footer-credit">
+        <p data-en="Designed & built by" data-ua="Дизайн і розробка:">Designed & built by</p>
+        <p class="footer-name">Ivan Piven</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Brewed Coffee</p>
+    </div>
+  </footer>
+
+  <script>
+    /* ── Переключение языка ── */
+    function setLang(lang, btn) {
+      document.querySelectorAll('.lang-btn').forEach(function(b) {
+        b.classList.remove('active');
+      });
+      btn.classList.add('active');
+
+      document.querySelectorAll('[data-en]').forEach(function(el) {
+        var val = el.getAttribute('data-' + lang);
+        /* Если в тексте есть HTML-теги — используем innerHTML */
+        if (val.indexOf('<br>') !== -1 || val.indexOf('<em>') !== -1) {
+          el.innerHTML = val;
+        } else {
+          el.textContent = val;
+        }
+      });
+    }
+
+    /* ── Плавное появление секций при скролле ── */
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.about, .menu, .gallery, .visit').forEach(function(el) {
+      observer.observe(el);
+    });
+  </script>
+
+</body>
+</html>
