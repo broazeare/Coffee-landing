@@ -1,5 +1,18 @@
 # Coffee Landing Page
 
-Адаптивний лендінг для кофейні , плавне прокручування, підключені Google Fonts. Акцент на сучасний UI
+Адаптивний лендинг для кофейні з акцентом на сучасний UI та зручність використання.
 
-HTML | CSS | FLEXBOX | Responsive
+## 🔗 Live Demo
+https://broazeare.github.io/Coffee-landing/
+
+## ⚙️ Функціонал
+- Адаптивна верстка (mobile / tablet / desktop)
+- Плавне прокручування
+- Підключені Google Fonts
+- Чиста та зрозуміла структура
+- Кнопка перевода на українську мову
+
+## 🛠 Технології
+- HTML
+- CSS (Flexbox)
+- Responsive design
